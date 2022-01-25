@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 
 export const NavContainer = styled.nav`
+    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -18,6 +19,9 @@ export const StyledLink = styled(Link)`
     &:visited {
         text-decoration: none;
         color: black;
+    }
+    @media (max-width: 400px){
+        margin: 10px;
     }
 `
 
@@ -35,7 +39,7 @@ export const Logo = styled(Link)`
 export const PageContainer = styled.section`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 0px;
     height: auto;
@@ -70,6 +74,7 @@ export const CardContainer = styled.div`
 
 export const ImageContainer = styled.div`
     background-color: lightyellow;
+    object-fit: cover;
     width: 100%;
     height: 60%;
     margin-bottom: 0px;
@@ -143,7 +148,7 @@ export const HeroTextContainer = styled.div`
     max-width: 60%;
     height: auto;
     @media (max-width: 600px) {
-        max-width: 95%;
+        max-width: 100%;
     }
 `
 
@@ -166,10 +171,20 @@ export const HeroText = styled.p`
 export const ContactList = styled.ul`
     margin: 5%;
     color: black;
-    list-style-type: none;
+    /* list-style-type: none; */
 `
 
 export const ContactListItem = styled.li`
     color: black;
     margin-bottom: 20px;
+`
+
+export const ContactListLink = styled.a`
+    
+    color: black;
+    margin-bottom: 20px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 `
