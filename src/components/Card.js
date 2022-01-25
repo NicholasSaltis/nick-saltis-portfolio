@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardContainer, ImageContainer, TextContainer, CardTitle, CardDescription, CardLink } from '../styled-components'
+import { CardContainer, ImageContainer, TextContainer, CardTitle, CardDescription, CardLinkBox, CardLink } from '../styled-components'
 
 export const Card = ({projectDetails}) => {
 
@@ -12,7 +12,10 @@ export const Card = ({projectDetails}) => {
             <TextContainer>
                 <CardTitle>{title}</CardTitle>
                 <CardDescription>{description}</CardDescription>
-                <CardLink href={link}>View project</CardLink>
+                <CardLinkBox>
+                    <CardLink href={link} target="_blank">View project</CardLink>
+                    <CardLink href={link} target="_blank">View Repo</CardLink>
+                </CardLinkBox>
             </TextContainer>
         </CardContainer>
     )

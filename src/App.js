@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Bio } from './components/Bio'
-import { Footer } from './components/Footer'
 import { Home } from './components/Home'
 import { Navbar } from './components/Navbar'
 import { Projects } from './components/Projects'
@@ -22,7 +21,6 @@ const App = () => {
         <Route path="/projects/:projectName" element={<ShowProject />} />
         <Route path="/bio" element={<Bio />}/>
       </Routes>
-      <Footer />
     </BrowserRouter>
     </>
   )

@@ -35,6 +35,8 @@ export const Logo = styled(Link)`
 export const PageContainer = styled.section`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 0px;
     height: auto;
     min-height: 90vh;
@@ -60,7 +62,7 @@ export const CardDeck = styled.div`
 
 export const CardContainer = styled.div`
     background-color: lightgreen;
-    height: 60vh;
+    height: 50vh;
     width: 40vh;
     border-radius: 4px;
     margin: 35px;
@@ -69,29 +71,105 @@ export const CardContainer = styled.div`
 export const ImageContainer = styled.div`
     background-color: lightyellow;
     width: 100%;
-    height: 50%;
+    height: 60%;
     margin-bottom: 0px;
 `
 
 export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: lightgrey;
+    background-color: #f7f7f7;
     width: 100%;
-    height: 50%;
+    height: auto;
+    min-height: 40%;
     margin-top: 0px;
 `
 
 export const CardTitle = styled.h2`
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
 `
 
 export const CardDescription = styled.p`
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+`
+
+export const CardLinkBox = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
 `
 
 export const CardLink = styled.a`
     text-align: center;
-    
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    &:hover {
+        text-decoration: underline;
+    } 
+`
+
+export const CardNavLink = styled(Link)`
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    &:hover {
+        text-decoration: underline;
+    }
+`
+
+export const HeroContainer = styled.div`
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: grey;
+`
+
+// export const HeroImageContainer = styled.img`
+//     min-width: 50%;
+//     height: auto;
+//     background-color: red;
+// `
+
+export const HeroTextContainer = styled.div`
+    max-width: 60%;
+    height: auto;
+    @media (max-width: 600px) {
+        max-width: 95%;
+    }
+`
+
+export const HeroTitle = styled.h1`
+    text-align: center;
+    font-size: 40px;
+    color: black;
+`
+
+export const HeroSubtitle = styled.h2`
+    text-align: center;
+`
+
+export const HeroText = styled.p`
+    color: black;
+    margin: 5%;
+    overflow-wrap: break-word;
+`
+
+export const ContactList = styled.ul`
+    margin: 5%;
+    color: black;
+    list-style-type: none;
+`
+
+export const ContactListItem = styled.li`
+    color: black;
+    margin-bottom: 20px;
 `
