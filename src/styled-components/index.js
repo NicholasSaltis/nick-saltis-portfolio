@@ -16,6 +16,7 @@ export const StyledLink = styled(Link)`
     font-size: 1.2;
     margin: 15px 20px 15px 20px;
     text-decoration: none;
+    color: black;
     &:visited {
         text-decoration: none;
         color: black;
@@ -65,7 +66,7 @@ export const CardDeck = styled.div`
 `
 
 export const CardContainer = styled.div`
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     height: 50vh;
     width: 40vh;
     border-radius: 4px;
