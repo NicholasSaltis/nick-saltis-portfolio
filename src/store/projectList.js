@@ -14,7 +14,7 @@ export const projects = [
     {
       title: "BakersBox",
       description: "A Ruby command line interface recipe conversion and CRUD app",
-      link: "/",
-      repo: "/"
+      link: "https://github.com/NicholasSaltis/NicholasSaltis_T1A3",
+      repo: "https://github.com/NicholasSaltis/NicholasSaltis_T1A3"
     }
   ]
