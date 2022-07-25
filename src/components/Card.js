@@ -14,7 +14,7 @@ export const Card = ({projectDetails, image}) => {
                 <CardDescription>{description}</CardDescription>
                 <CardLinkBox>
                     <CardLink href={link} target="_blank">View project</CardLink>
-                    <CardLink href={repo} target="_blank">View Repo</CardLink>
+                    {repo ? <CardLink href={repo} target="_blank">View repo</CardLink> : null}
                 </CardLinkBox>
             </TextContainer>
         </CardContainer>

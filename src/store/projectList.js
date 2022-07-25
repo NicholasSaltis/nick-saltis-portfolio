@@ -1,5 +1,10 @@
 export const projects = [
     {
+      title: "Tryscorer Odds Comparison",
+      description: "Python webscraper and React data tool for comparing tryscorer odds from various bookmakers and modelling predictions for the NRL",
+      link: "https://wicky.ai/rugby-league/betting/",
+    },
+    {
       title: "Games Monarch",
       description: "A customisable game score tracker with social and group features",
       link: "https://gamesmonarch.games/",

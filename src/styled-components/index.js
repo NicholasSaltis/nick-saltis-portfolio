@@ -24,6 +24,9 @@ export const StyledLink = styled(Link)`
     @media (max-width: 400px){
         margin: 10px;
     }
+    &:hover {
+        text-decoration: underline;
+    }
 `
 
 export const Logo = styled(Link)`
@@ -37,6 +40,7 @@ export const Logo = styled(Link)`
         color: black;
     }
 `
+
 export const PageContainer = styled.section`
     display: flex;
     flex-direction: column;
@@ -47,6 +51,7 @@ export const PageContainer = styled.section`
     min-height: 90vh;
     /* background-color: lightblue; */
 `
+
 export const FooterContainer = styled.footer`
     height: 4vh;
     background-color: lightcoral;
@@ -71,6 +76,10 @@ export const CardContainer = styled.div`
     width: 40vh;
     border-radius: 4px;
     margin: 35px;
+    &:hover {
+        box-shadow: 0 3px 5px lightgrey;
+        transition: box-shadow 0.2s ease-in-out 0s;
+    }
 `
 
 export const ImageContainer = styled.div`
@@ -115,6 +124,7 @@ export const CardLink = styled.a`
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 1.15em;
     &:hover {
         text-decoration: underline;
     } 
